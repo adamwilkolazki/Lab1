@@ -23,20 +23,25 @@ public class Main {
 
             System.out.printf("%d\t%f\t%.0f\n",i,Math.log(i),sumaPoteg);*/
         Scanner input = new Scanner(System.in);
-        int num1;
-        int num2;
-        System.out.println("Podaj pierwsza liczbe: ");
+
+        /*System.out.println("Podaj pierwsza liczbe: ");
         num1=input.nextInt();
         System.out.println("Podaj druga liczbe: ");
         num2=input.nextInt();
-        System.out.printf("wynik dodawania %d + %d = %d\n", num1, num2, num1 + num2 );
-
-        }
+        ;*/
 
 
-
-
-
-
+        do {
+            int num1 = 0;
+            int num2 = 0;
+            System.out.println("Podaj liczby ktore mam dodac: ");
+            num1 = input.nextInt();
+            num2 = input.nextInt();
+            if ((num1 == 0) || (num2 == 0)) break;
+            System.out.printf("wynik dodawania %d + %d = %d\n", num1, num2, num1 + num2);
+        } while (true);
     }
+
+
+}
 
