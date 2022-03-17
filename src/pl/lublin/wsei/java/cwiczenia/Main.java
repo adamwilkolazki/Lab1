@@ -1,11 +1,16 @@
 package pl.lublin.wsei.java.cwiczenia;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
+
 
 import static java.lang.Math.sqrt;
 
 public class Main {
+
+
+
 
     public static void main(String[] args) {
      /*   System.out.printf("alfa\tsin(alfa)\n");
@@ -31,17 +36,32 @@ public class Main {
         ;*/
 
 
-        do {
-            int num1 = 0;
-            int num2 = 0;
-            System.out.println("Podaj liczby ktore mam dodac: ");
-            num1 = input.nextInt();
-            num2 = input.nextInt();
-            if ((num1 == 0) || (num2 == 0)) break;
-            System.out.printf("wynik dodawania %d + %d = %d\n", num1, num2, num1 + num2);
-        } while (true);
-    }
+
+     /*   System.out.println("Podaj liczbe: ");
+        int a = input.nextInt();
+        System.out.println((Integer.toBinaryString(a)));
+        System.out.println(Integer.toHexString(a));
+*/
+        int [] liczby =new int[30];
+        Random rnd = new Random();
+        for (int i=0; i<30;i++)
+        liczby[i] = rnd.nextInt();
+        int max = Integer.MAX_VALUE;
+        int min = Integer.MIN_VALUE;
+        long avg = 0;
+        for(int i :liczby)
+        {
+            System.out.println(1);
+            if (1<min) min = 1;
+            if (1>max) max = 1;
+            avg+=1;
+
+        }
+        System.out.printf("MIN = %d, MAX = %d AVG = %f", min,max,(float)avg/liczby.length);
 
 
-}
+    }}
+
+
+
 
