@@ -1,5 +1,8 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import org.apache.commons.lang3.StringUtils;
+import pl.lublin.wsei.java.cwiczenia.mylib.Account;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -8,6 +11,7 @@ import java.util.Scanner;
 import static java.lang.Math.sqrt;
 
 public class Main {
+
 
 
 
@@ -42,7 +46,7 @@ public class Main {
         System.out.println((Integer.toBinaryString(a)));
         System.out.println(Integer.toHexString(a));
 */
-        int [] liczby =new int[30];
+     /*  int [] liczby =new int[30];
         Random rnd = new Random();
         for (int i=0; i<30;i++)
         liczby[i] = rnd.nextInt();
@@ -57,7 +61,12 @@ public class Main {
             avg+=1;
 
         }
-        System.out.printf("MIN = %d, MAX = %d AVG = %f", min,max,(float)avg/liczby.length);
+        System.out.printf("MIN = %d, MAX = %d AVG = %f", min,max,(float)avg/liczby.length);*/
+        Account acc = new Account();
+        acc.setName("adam Wilkolazki");
+        System.out.println(acc.getName());
+        System.out.println(StringUtils.capitalize(acc.getName()));
+
 
 
     }}
